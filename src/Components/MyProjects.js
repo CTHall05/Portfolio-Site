@@ -2,6 +2,7 @@ import React from 'react';
 import Devault from '../Images/devault-image.png';
 import Employee from '../Images/employeetracker.png';
 import Yoga from '../Images/izzyhallyoga.png';
+import "@fontsource/roboto";
 
 export default function MyProjects() {
   const projects = [

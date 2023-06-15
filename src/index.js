@@ -6,6 +6,7 @@ import Skills from './Components/Skills';
 import MyProjects from './Components/MyProjects';
 import Contact from './Components/Contact';
 import '../src/App.css';
+import "@fontsource/roboto";
 
 const App = () => {
 
@@ -26,10 +27,10 @@ const App = () => {
       </header>
       <AboutMe></AboutMe>
       <AboutMeButtons></AboutMeButtons>
+      <Contact></Contact>
       <Skills></Skills>
       <section className='section-separator'></section>
       <MyProjects></MyProjects>
-      <Contact></Contact>
     </div>
   );
 };

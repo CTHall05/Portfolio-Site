@@ -1,10 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.fecba356.js",
+    "main.css": "/static/css/main.d4304bf8.css",
+    "main.js": "/static/js/main.07cb17ba.js",
+    "static/media/devault-image.png": "/static/media/devault-image.fdb31f17d3731fb632b2.png",
+    "static/media/profileshot.jpg": "/static/media/profileshot.8b5d4c00ee2b4919c944.jpg",
+    "static/media/profilepicture.jpg": "/static/media/profilepicture.bc551b0090f85e75be8d.jpg",
+    "static/media/izzyhallyoga.png": "/static/media/izzyhallyoga.98518959ddd43ccd74ff.png",
+    "static/media/employeetracker.png": "/static/media/employeetracker.6bfcc85794e5f2965e45.png",
+    "static/media/react.png": "/static/media/react.12686ff0b0bc284779c1.png",
+    "static/media/node.png": "/static/media/node.a7e9699ba06dad06c57a.png",
+    "static/media/html.png": "/static/media/html.7c0e566e88a93913eb79.png",
+    "static/media/css.png": "/static/media/css.93c86bb8660dcc40af96.png",
+    "static/media/ts.png": "/static/media/ts.d997b2f558219aa6f49b.png",
+    "static/media/js.png": "/static/media/js.64b1e737cbb43994ea91.png",
     "index.html": "/index.html",
-    "main.fecba356.js.map": "/static/js/main.fecba356.js.map"
+    "main.d4304bf8.css.map": "/static/css/main.d4304bf8.css.map",
+    "main.07cb17ba.js.map": "/static/js/main.07cb17ba.js.map"
   },
   "entrypoints": [
-    "static/js/main.fecba356.js"
+    "static/css/main.d4304bf8.css",
+    "static/js/main.07cb17ba.js"
   ]
 }

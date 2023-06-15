@@ -2,6 +2,7 @@ import React from 'react';
 import Headshot from "../Images/profilepicture.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import "@fontsource/roboto";
 import "../../src/App.css";
 
 export default function AboutMe() {

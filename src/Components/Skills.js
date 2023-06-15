@@ -5,6 +5,7 @@ import JS from '../Images/js.png';
 import TypeScript from '../Images/ts.png';
 import RT from '../Images/react.png';
 import Node from '../Images/node.png';
+import "@fontsource/roboto";
 
 
 export default function Skills() {
