@@ -11,7 +11,7 @@ export default function AboutMe() {
       <div className='card'>
         <div className='aboutspecs-container'>
           <h1>Hello, <span className='myname'>I'm Taylor,</span><br/>Full Stack Developer.</h1>
-          <p>I am a recent coding bootcamp graduate looking for their first role in tech!</p>
+          <h3>I am a recent coding bootcamp graduate looking for their first role in tech!</h3>
           <div className='social-icons'>
             <a href="https://www.linkedin.com/in/charlestaylorhall/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className='icon' />

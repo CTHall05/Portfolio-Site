@@ -23,12 +23,7 @@ export default function Contact() {
         </div>
       </div>
       <p className="contact-story">
-        After seeing the impact that technology had on the world during Covid, I decided I wanted a career change.
-        I gradually taught myself some coding basics before deciding to take a coding bootcamp for a more structured approach.<br />
-        It was a 16-week program where we focused on Full Stack Development. <br/>We learnt about technologies such as HTML, CSS, JavaScript, React, NodeJS, PostgreSQL, and testing libraries such as Jest and Cypress.
-      </p>
-      <p className='contact-story'>It was an incredible experience and I feel that I bring alot of great tech skills as well as soft skills to the table.
-      Coming from an aviation background I have great communication skills as well as a strong ability to connect and collaborate with my teamates. If you think I would be a good fit for your team please contact me, I'd love to talk.
+      After witnessing technology's impact during Covid, I pursued a career change. After self-teaching myself coding basics I then enrolled in a 16-week coding bootcamp, focusing on Full Stack Development. The program covered HTML, CSS, JavaScript, React, NodeJS, PostgreSQL, Jest, and Cypress for testing. With a background in aviation, I possess strong communication and collaboration skills, alongside valuable technical expertise. If interested, please contact me to discuss how I can contribute to your team.
       </p>
     </section>
   );
