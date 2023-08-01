@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope} from '@fortawesome/free-regular-svg-icons';
-import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import "@fontsource/roboto";
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import '@fontsource/roboto';
 import ContactImage from '../Images/profileshot.jpg';
 
 export default function Contact() {
@@ -23,7 +23,13 @@ export default function Contact() {
         </div>
       </div>
       <p className="contact-story">
-      After witnessing technology's impact during Covid, I pursued a career change. After self-teaching myself coding basics I then enrolled in a 16-week coding bootcamp, focusing on Full Stack Development. The program covered HTML, CSS, JavaScript, React, NodeJS, PostgreSQL, Jest, and Cypress for testing. With a background in aviation, I possess strong communication and collaboration skills, alongside valuable technical expertise. If interested, please contact me to discuss how I can contribute to your team.
+        As a recent Coding Bootcamp Graduate, I focused on mastering React
+        Application Development through personal projects and specialized
+        courses. My journey into software engineering was inspired by witnessing
+        the trans-formative impact of technology in 2020. I believe that with
+        the right attitude and a thirst for learning, anyone can thrive in this
+        industry. Coming from an aviation background, I embrace collaboration
+        and excel in diverse, cross-functional teams.
       </p>
     </section>
   );

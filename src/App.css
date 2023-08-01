@@ -1,15 +1,16 @@
 :root {
-  --primary-colour: #00539C;
+  --primary-colour: #00539c;
   --font-colour: white;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   color: black;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -41,7 +42,7 @@ html, body {
 }
 
 .header-text-container a:hover {
-  color: #E6705A;
+  color: #e6705a;
 }
 
 /* ====== */
@@ -55,7 +56,12 @@ html, body {
 }
 
 .myname {
-  color: #E6705A;
+  color: #e6705a;
+}
+
+.techName {
+  color: var(--primary-colour);
+  font-weight: bold;
 }
 
 .card {
@@ -72,7 +78,6 @@ html, body {
 .aboutspecs-container {
   text-align: start;
   margin-right: 20px;
-
 }
 
 .aboutspecs-container h1 {
@@ -103,11 +108,7 @@ html, body {
   color: var(--primary-colour);
 }
 
-
 /* ==== Utilities ==== */
-
-
-
 
 /* CSS */
 
@@ -136,8 +137,8 @@ html, body {
 }
 
 .buttonStyle:after {
-  content: "";
-  background-color: #E6705A;
+  content: '';
+  background-color: #e6705a;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -150,6 +151,32 @@ html, body {
 .buttonStyle:hover:after {
   top: 0px;
   left: 0px;
+}
+
+.buttonStyleResume {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  background-color: var(--primary-colour);
+}
+
+.buttonStyleResume:hover {
+  background-color: #e6705a;
+}
+
+.a-style {
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -167,10 +194,9 @@ html, body {
 .section-separator {
   width: 100%;
   height: 50px;
-  background-color: #E6705A;
+  background-color: #e6705a;
   text-align: center;
 }
-
 
 /* Skills Section */
 
@@ -190,6 +216,7 @@ html, body {
 .skill-description-card h2 {
   color: var(--primary-colour);
   font-size: 2.2rem;
+  text-align: center;
 }
 
 .skill-icons-Names-card-container {
@@ -208,19 +235,18 @@ html, body {
   box-shadow: 2px 2px 4px var(--primary-colour);
 }
 
-
 /* Projects Section */
 
 .projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00539C;
+  background-color: #00539c;
   padding: 20px;
 }
 
 .projects-container h2 {
-  color:  #ffffff;
+  color: #ffffff;
   font-size: 2.2rem;
 }
 
@@ -243,7 +269,7 @@ html, body {
   /* box-shadow: 0px 2px 10px rgba(230,112,90); */
   max-width: 600px;
   width: 100%;
-  border: #E6705A 5px solid;
+  border: #e6705a 5px solid;
 }
 
 .project-image img {
@@ -293,7 +319,7 @@ html, body {
 }
 
 .project-button-style:hover {
-  background-color: #E6705A;
+  background-color: #e6705a;
 }
 
 /* Contact Componenet */
@@ -315,7 +341,7 @@ html, body {
   width: 300px;
   height: auto;
   max-width: 100%;
-  border: 5px solid #E6705A;
+  border: 5px solid #e6705a;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -344,13 +370,5 @@ html, body {
 }
 
 .contact-icon a:hover {
-  color: #E6705A;
+  color: #e6705a;
 }
-
-
-
-
-
-
-
-
