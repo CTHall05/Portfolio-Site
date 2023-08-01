@@ -15,14 +15,6 @@ export default function Skills() {
       </div>
       <div className="skill-icons-Names-card-container">
         <div className="skills-divs">
-          <h3>HTML</h3>
-          <img src={HTML} alt="An icon of HTML" />
-        </div>
-        <div className="skills-divs">
-          <h3>CSS</h3>
-          <img src={CSS} alt="An icon of CSS" />
-        </div>
-        <div className="skills-divs">
           <h3>JavaScript</h3>
           <img src={JS} alt="An icon of Javascript" />
         </div>
@@ -37,6 +29,14 @@ export default function Skills() {
         <div className="skills-divs">
           <h3>Node</h3>
           <img src={Node} alt="An icon of Node" />
+        </div>
+        <div className="skills-divs">
+          <h3>HTML</h3>
+          <img src={HTML} alt="An icon of HTML" />
+        </div>
+        <div className="skills-divs">
+          <h3>CSS</h3>
+          <img src={CSS} alt="An icon of CSS" />
         </div>
       </div>
     </section>
