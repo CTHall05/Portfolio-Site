@@ -1,5 +1,5 @@
 :root {
-  --primary-colour: #00539c;
+  --primary-colour: #471aa0;
   --font-colour: white;
   margin: 0;
   padding: 0;
@@ -11,30 +11,43 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .header {
-  background-color: var(--primary-colour);
-  height: 10vh;
+  height: 15vh;
   margin: 0;
   display: flex;
+  margin: 0 auto;
+  position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    max-width: 960px;
+  }
 }
 
 /* Header Section */
 
+.intialsIcon {
+  height: 5em;
+  border-radius: 5px;
+}
+
 .header-text-container {
   display: flex;
   justify-content: center;
+  align-content: center;
   gap: 20px;
   font-weight: bold;
 }
 .header-text-container a {
   text-decoration: none;
-  color: var(--font-colour);
+  color: black;
 }
 
 .header-text-container a {
@@ -42,7 +55,7 @@ body {
 }
 
 .header-text-container a:hover {
-  color: #e6705a;
+  color: var(--primary-colour);
 }
 
 /* ====== */
@@ -52,11 +65,10 @@ body {
 .aboutme-section {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .myname {
-  color: #e6705a;
+  color: var(--primary-colour);
 }
 
 .techName {
@@ -66,7 +78,7 @@ body {
 
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -76,7 +88,7 @@ body {
 }
 
 .aboutspecs-container {
-  text-align: start;
+  text-align: center;
   margin-right: 20px;
 }
 
@@ -87,13 +99,14 @@ body {
 }
 
 .aboutme-image {
-  width: 40%;
+  width: 210px;
   border: solid 5px var(--primary-colour);
   border-radius: 50%;
 }
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -159,23 +172,29 @@ body {
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
-  border: 1px solid black;
+  border: 1px solid var(--primary-colour);
+  border-radius: 15px;
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   text-decoration: none;
-  background-color: var(--primary-colour);
+  background-color: white;
+  color: black;
 }
 
 .buttonStyleResume:hover {
-  background-color: #e6705a;
+  background-color: var(--primary-colour);
+  color: white;
 }
 
 .a-style {
   text-decoration: none;
+  color: var(--primary-colour);
+}
+
+.a-style:hover {
   color: white;
 }
 
@@ -205,18 +224,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100vw;
+  background-color: white;
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.skill-h3 {
+  color: var(--primary-colour);
 }
 
 .skill-description-card {
   width: 30vw;
+  border: solid 1px grey;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
 }
 .skill-description-card h2 {
-  color: var(--primary-colour);
+  color: black;
   font-size: 2.2rem;
   text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 .skill-icons-Names-card-container {
@@ -241,12 +282,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00539c;
   padding: 20px;
 }
 
 .projects-container h2 {
-  color: #ffffff;
+  color: black;
   font-size: 2.2rem;
 }
 
@@ -259,17 +299,8 @@ body {
   margin-top: 20px;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  /* box-shadow: 0px 2px 10px rgba(230,112,90); */
-  max-width: 600px;
-  width: 100%;
-  border: #e6705a 5px solid;
+.project-image {
+  width: 5000px;
 }
 
 .project-image img {
@@ -281,6 +312,7 @@ body {
 
 .project-description {
   letter-spacing: 2px;
+  width: 90%;
 }
 
 .project-content {
@@ -316,10 +348,60 @@ body {
   touch-action: manipulation;
   text-decoration: none;
   color: black;
+  background-color: var(--primary-colour);
 }
 
 .project-button-style:hover {
-  background-color: #e6705a;
+  background-color: white;
+}
+
+/* MyProjects.css */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  width: 500px; /* Set your desired card width */
+  height: auto;
+  margin: 20px;
+  transition: transform 0.3s;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Update this line to make the image container full-width */
+  height: auto;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.project-content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Update this line to make the content container full-width */
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Adjust the background color as needed */
+  color: #fff; /* Text color for description and tags */
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-content-container {
+  opacity: 1;
+}
+
+.project-card:hover img {
+  transform: scale(1.05); /* Adjust the scale as needed */
 }
 
 /* Contact Componenet */
@@ -329,10 +411,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: white;
+  background-color: var(--primary-colour);
+  padding: 50px;
+  height: 50vh;
 }
 
 .contact-container h2 {
-  color: black;
+  color: white;
   font-weight: 700;
   font-size: 2.2em;
 }
@@ -348,9 +434,9 @@ body {
 
 .contact-story {
   line-height: 1.5;
-  font-size: 1.4rem;
-  text-align: start;
-  width: 50%;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 40vw;
 }
 
 .contact-icons {
@@ -364,7 +450,7 @@ body {
 }
 
 .contact-icon a {
-  color: black;
+  color: white;
   font-size: 50px;
   text-decoration: none;
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AboutMe from './Components/AboutMe';
-import AboutMeButtons from './Components/AboutMeButtons';
-import Skills from './Components/Skills';
 import MyProjects from './Components/MyProjects';
 import Contact from './Components/Contact';
+import Skills from './Components/Skills';
 import '../src/App.css';
 import '@fontsource/roboto';
+import HeaderImage from '../src/Images/thIcon.png';
 
 const App = () => {
   const handleLinkClick = (event, target) => {
@@ -18,6 +18,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
+        <img className="intialsIcon" src={HeaderImage} alt="myIcon" />
         <div className="header-text-container">
           <a href="About" onClick={(e) => handleLinkClick(e, '#about')}>
             About
@@ -26,15 +27,13 @@ const App = () => {
             Projects
           </a>
           <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
-            Contact
+            Contact Me
           </a>
         </div>
       </header>
       <AboutMe></AboutMe>
-      <Skills></Skills>
-      <AboutMeButtons></AboutMeButtons>
       <Contact></Contact>
-      <section className="section-separator"></section>
+      <Skills></Skills>
       <MyProjects></MyProjects>
     </div>
   );

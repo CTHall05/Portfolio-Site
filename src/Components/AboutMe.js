@@ -15,31 +15,20 @@ export default function AboutMe() {
     <section id="about" className="aboutme-section">
       <div className="card">
         <div className="aboutspecs-container">
-          <button className="buttonStyleResume">
-            <a
-              href={CV}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="a-style"
-            >
-              Download Resume
-            </a>
-          </button>
-          <h1>
-            Hello, <span className="myname">I'm Taylor,</span>
-            <br />
-            Full Stack Developer.
-          </h1>
-          <h3>
-            {' '}
-            <span className="techName">Node.js</span> and{' '}
-            <span className="techName">React</span> Developer with a passion for
-            test-driven development, honing my skills with Jest and Cypress.
-            Currently, I'm expanding my{' '}
-            <span className="techName">JavaScript</span> knowledge by learning
-            <span className="techName"> TypeScript.</span>
-          </h3>
+          <h1 className="myname">Designer, FrontEnd Developer & Aviator</h1>
+          <h3> I love to design and implement coding ideas and learn!</h3>
+          <img className="aboutme-image" src={Headshot} alt="Taylor Hall" />
           <div className="social-icons">
+            <button className="buttonStyleResume">
+              <a
+                href={CV}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="a-style"
+              >
+                Download Resume
+              </a>
+            </button>
             <a
               href="https://www.linkedin.com/in/charlestaylorhall/"
               target="_blank"
@@ -63,7 +52,6 @@ export default function AboutMe() {
             </a>
           </div>
         </div>
-        <img className="aboutme-image" src={Headshot} alt="Taylor Hall" />
       </div>
     </section>
   );
