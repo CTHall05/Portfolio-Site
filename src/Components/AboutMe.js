@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import '@fontsource/roboto';
 import '../../src/App.css';
-import CV from '../../src/Taylor Hall - Developer CV .pdf';
+import CV from '../../src/Taylor Hall - Resume .docx';
 
 export default function AboutMe() {
   return (

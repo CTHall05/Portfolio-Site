@@ -17,6 +17,8 @@ export default function Skills() {
           <ul className="skill-list">
             <li>Github</li>
             <li>Vercel</li>
+            <li>Figma</li>
+            <li>ElephantSQL</li>
           </ul>
         </div>
       </div>

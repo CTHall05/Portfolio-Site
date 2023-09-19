@@ -89,7 +89,6 @@ body {
 
 .aboutspecs-container {
   text-align: center;
-  margin-right: 20px;
 }
 
 .aboutspecs-container h1 {
@@ -243,7 +242,8 @@ body {
 }
 
 .skill-description-card {
-  width: 30vw;
+  width: 30%;
+  padding: 30px;
   border: solid 1px grey;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 5px;
@@ -348,11 +348,12 @@ body {
   touch-action: manipulation;
   text-decoration: none;
   color: black;
-  background-color: var(--primary-colour);
+  background-color: white;
 }
 
 .project-button-style:hover {
-  background-color: white;
+  background-color: var(--primary-colour);
+  color: white;
 }
 
 /* MyProjects.css */
@@ -363,6 +364,7 @@ body {
   height: auto;
   margin: 20px;
   transition: transform 0.3s;
+  border-radius: 5px;
 }
 
 .project-image {
@@ -456,5 +458,29 @@ body {
 }
 
 .contact-icon a:hover {
-  color: #e6705a;
+  color: black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .contact-image {
+    width: 150px;
+    border-width: 3px;
+  }
+  .contact-story {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  /* Continue adjusting styles for other contact elements */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+  .aboutme-image {
+    width: 150px;
+    border-width: 3px;
+  }
 }
