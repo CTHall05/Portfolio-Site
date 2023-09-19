@@ -4,6 +4,7 @@ import AboutMe from './Components/AboutMe';
 import MyProjects from './Components/MyProjects';
 import Contact from './Components/Contact';
 import Skills from './Components/Skills';
+import Footer from './Components/Footer';
 import '../src/App.css';
 import '@fontsource/roboto';
 import HeaderImage from '../src/Images/thIcon.png';
@@ -35,6 +36,7 @@ const App = () => {
       <Contact></Contact>
       <Skills></Skills>
       <MyProjects></MyProjects>
+      <Footer></Footer>
     </div>
   );
 };

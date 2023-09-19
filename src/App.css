@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
+  min-width: fit-content;
 }
 
 .header {
@@ -23,6 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   box-shadow: black;
+  padding: 20px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -98,7 +100,7 @@ body {
 }
 
 .aboutme-image {
-  width: 210px;
+  min-width: 300px;
   border: solid 5px var(--primary-colour);
   border-radius: 50%;
 }
@@ -190,7 +192,7 @@ body {
 
 .a-style {
   text-decoration: none;
-  color: var(--primary-colour);
+  color: black;
 }
 
 .a-style:hover {
@@ -223,8 +225,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
   width: 100vw;
   background-color: white;
 }
@@ -242,7 +244,7 @@ body {
 }
 
 .skill-description-card {
-  width: 30%;
+  width: 50%;
   padding: 30px;
   border: solid 1px grey;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -461,26 +463,26 @@ body {
   color: black;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 768px) {
-  .contact-image {
-    width: 150px;
-    border-width: 3px;
-  }
-  .contact-story {
-    font-size: 1rem;
-    width: 80vw;
-  }
-  /* Continue adjusting styles for other contact elements */
+/* Footer Container */
+.footer-container {
+  height: 10vh;
+  background-color: var(--primary-colour);
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 90vw;
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    width: 100vw;
   }
+
+  .card {
+    width: 500px;
+  }
+
   .aboutme-image {
-    width: 150px;
+    width: 200px;
     border-width: 3px;
   }
+  /* Continue adjusting styles for other contact elements */
 }
