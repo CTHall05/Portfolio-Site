@@ -12,7 +12,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
-  min-width: fit-content;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
 }
 
 .header {
@@ -362,7 +367,7 @@ body {
 .project-card {
   position: relative;
   overflow: hidden;
-  width: 500px; /* Set your desired card width */
+  max-width: 500px; /* Set your desired card width */
   height: auto;
   margin: 20px;
   transition: transform 0.3s;
@@ -472,10 +477,6 @@ body {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  .contact-container {
-    width: 100vw;
-  }
-
   .card {
     width: 500px;
   }
